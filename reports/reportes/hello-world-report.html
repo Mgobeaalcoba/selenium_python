@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-05-10 16:32:37</p>
-                <p class='attribute'><strong>Duration: </strong>20.592s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 2</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-05-10 16:41:02</p>
+                <p class='attribute'><strong>Duration: </strong>43.989s</p>
+                <p class='attribute'><strong>Status: </strong>Pass: 1, Error: 1</p>
             </div>
         </div>
         <div class="row">
@@ -40,17 +40,26 @@
                             </tr>
                             
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_visit_wikipedia (__main__.HelloWorld.test_visit_wikipedia)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
                                     
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
                                 </td>
                             </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>MaxRetryError</p>
+                                        <p>HTTPConnectionPool(host='localhost', port=62960): Max retries exceeded with url: /session/a8185682fdf371f54f4f079524100dcf/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000203DA809850>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</p>
+                                    </td>
+                                </tr>
                             
                         
                         <tr>
@@ -58,7 +67,7 @@
                                Total Test Runned: 2
                             </td>
                             <td>
-                                <span>Pass: 2</span>
+                                <span>Pass: 1, Error: 1</span>
                             </td>
                         </tr>
                     </tbody>

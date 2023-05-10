@@ -55,6 +55,49 @@ Finalmente debemos buscar los drivers del navegador con el queramos trabajar. En
 
 **Unittest (PyTest):**
 
-<img src="./unittest.PNG">
+<img src="./images/unittest.PNG">
+
+---------------------------------------
+
+¿Como hacemos para que al correr pruebas unitarias no se cierren las ventanas que abrimos de forma automatica con selenium? 
+
+1- Agregamos a setUp y a tearDown una anotación arriba del tipo @classmethod
+2- cambiamos el "self" de esos metodos por "cls" en todos los lugares donde antes aparecía
+
+Ejemplo de test result corrido así: 
+
+<img src="./images/test_result.PNG">
+
+-----------------------------------------
+
+**Encontrar elementos de un sitio web para luego interactuar con ellos usando find_element** 
+
+Recordemos la estructura de un sitio web. Es HTML:
+
+<img src="./images/estructura.PNG">
+
+¿Como vamos a llegar a estos elementos? A traves de los selectores que son estos:
+
+<img src="./images/selectores.PNG">
+
+Entonces por ejemplo abro esta pagina creada con fines educativos:
+
+http://demo-store.seleniumacademy.com/
+
+Abro el inspector de elementos y busco el id o una identificación de la barra de busqueda para poder interactuar con el misma mediante el find_element. 
+
+El elemento en cuestion es:
+
+
+<input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." autocomplete="off">
+
+"input id="search" type="search" name="q" value="" class="input-text required-entry" maxlength="128" placeholder="Search entire store here..." autocomplete="off""
+
+Vamos a testearlo a traves un file/class de python llamado HomePageTest.py...
+
+Y el resultado de mi test es que encontró el elemento que buscamos: 
+
+<img src="./images/test_result_2.PNG">
+
 
 

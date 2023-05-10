@@ -8,10 +8,11 @@ class HelloWorld(unittest.TestCase):
     # Defino los metodos de mi testing:
 
     # setUp prepara el entorno de la prueba misma: 
-    def setUp(self) -> None:
+    @classmethod
+    def setUpClass(cls) -> None:
         # Puede que en Windows no sirva la ruta así y haya que ponerle un "r" delante y la ruta completa.
-        self.driver = webdriver.Chrome(executable_path= './chromedriver.exe')
-        driver = self.driver
+        cls.driver = webdriver.Chrome(executable_path= './chromedriver.exe')
+        driver = cls.driver
         # Le indico al driver que espere implicitamente hasta 10 segundos antes de
         # realizar la proxima acción, que estarán en nuestras pruebas:
         driver.implicitly_wait(10)
@@ -27,10 +28,11 @@ class HelloWorld(unittest.TestCase):
         driver.get('https://www.wikipedia.org')
 
     # Salida de lo que estamos haciendo
-    def tearDown(self) -> None:
+    @classmethod
+    def tearDown(cls) -> None:
         # Acciones al finalizar la prueba. Por ejemplo cerrar el navegador para 
         # evitar fuga de recursos y que nuestro equipo se ponga lento. 
-        self.driver.quit()
+        cls.driver.quit()
     
 # Entry Point para inicializar las pruebas:
 if __name__ == "__main__":

@@ -185,7 +185,20 @@ Podemos ver como revisando el archivo alerts.py
 
 Podemos ver como revisando el archivo automatic_navigation.py
 
+------------------------------------------------
 
+### Demoras implicitas y explicitas:
+
+Cuando ejecutamos de forma automatica acciones sobre un dominio podemos usar dos tipos distintos de demoras, en función de nuestra necesidad. Demoras implicitas yd demoras explicitas. 
+
+<img src="./images/demoras.PNG">
+
+Podemos profundizar viendo el archivo waits.py
+
+Algunas de las condiciones esperadas con las que cuenta selenium y podemos usar son:
+
+<img src="./images/condiciones_esperadas.PNG">
+<img src="./images/condiciones_esperadas2.PNG">
 
 
 

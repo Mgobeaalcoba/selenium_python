@@ -1,5 +1,5 @@
 import unittest
-from pyunitreport import HTMLTestRunner
+from HtmlTestRunner import HTMLTestRunner
 from selenium import webdriver
 
 class HomePageTests(unittest.TestCase):
@@ -59,4 +59,4 @@ class HomePageTests(unittest.TestCase):
         shopping_cart_icon = self.driver.find_element("css selector", "div.header-minicart span.icon")
 
 if __name__ == '__main__':
-    unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= 'reportes', report_name='home-page-test-report'))
+    unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= './reports/single-reports', report_name='home-page-test-report', add_timestamp=False))

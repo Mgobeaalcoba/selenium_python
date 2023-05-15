@@ -100,4 +100,44 @@ Y el resultado de mi test es que encontró el elemento que buscamos:
 <img src="./images/test_result_2.PNG">
 
 
+---------------------------------------------
+
+**Assertions**
+
+<img src="./images/assertions.PNG">
+
+En el ejemplo afirmo que el atributo text del objeto price debe ser "Equal" a un string que contenga "300". 
+
+**Test Suites**
+
+<img src="./images/test_suites.PNG">
+
+Una vez que tenemos armados los archivos con las pruebas que queremos hacer, debemos construir nuestra Suite de Test en la cual le indicaremos que test queremos hacer y en que orden. Lo llamaremos "smoketests.py"
+
+Al correr "smoketests.py" se ejecuran todos los tests en el orden de archivos que haya establecido en mi suite. 
+
+Realizando el suite de pruebas me di cuenta que HTMLTestRunner de pyunitreport es un fork de HTMLTestRunner que nos otorga un unico informe con los resultados de todas nuestras pruebas. Por ese motivo es conveniente usar directamente el segundo: 
+
+Para instalarlo correr con el venv encendido: 
+
+```bash
+pip install html-testRunner
+```
+Para importarla librería se importa así:
+
+```python
+from HtmlTestRunner import HTMLTestRunner
+```
+Para guardar los reportes tiene sutiles cambios como se puede ver en HomePageTest.py:
+
+Se establecen así los parametros del runner: 
+
+```python
+if __name__ == '__main__':
+    unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= 'reports/reportes', report_name='home-page-test-report', add_timestamp=False))
+```
+
+
+
+
 

@@ -173,6 +173,19 @@ Métodos más comunes de la clase WebElement
 
 Revisar archivo register_new_user.py
 
+----------------------------------------------
+
+### También podemos interactuar con elementos emergentes de las paginas como son los "alert" y los "pop-up"
+
+Podemos ver como revisando el archivo alerts.py
+
+------------------------------------------------
+
+### Por supuesto, también podemos automatizar, y testear claro, la navegación entre las paginas que componen la web que estamos testeando
+
+Podemos ver como revisando el archivo automatic_navigation.py
+
+
 
 
 

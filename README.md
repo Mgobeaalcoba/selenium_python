@@ -137,6 +137,44 @@ if __name__ == '__main__':
     unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= 'reports/reportes', report_name='home-page-test-report', add_timestamp=False))
 ```
 
+-----------------------------------------------------------------------
+
+## Entender las clases WebDriver y WebElement
+
+Como viste en clases anteriores, un sitio web se construye por código HTML en forma de árbol, conteniendo distintos elementos con los que podemos interactuar según estén presentes o no en nuestra interfaz gráfica.
+
+Selenium WebDriver nos brinda la posibilidad de poder referirnos a estos elementos y ejecutar métodos específicos para realizar las mismas acciones que un humano haría sobre los mismos, gracias a las clases WebDriver y WebElement.
+
+**Clase WebDriver**
+
+Cuenta con una serie de propiedades y métodos para interactuar directamente con la ventana del navegador y sus elementos relacionados, como son pop-ups o alerts. Por ahora nos centraremos a las más utilizadas.
+
+Propiedades de la clase WebDriver
+
+Estas son las más comunes para acceder al navegador:
+
+<img src="./images/clase_web_driver.PNG">
+
+**Clase WebElement**
+
+Esta clase nos permite interactuar específicamente con elementos de los sitios web como textbox, text area, button, radio button, checkbox, etc.
+
+Propiedades más comunes de la clase WebElement:
+
+<img src="./images/propiedades_web_element.PNG">
+
+Métodos más comunes de la clase WebElement
+
+<img src="./images/metodos_web_element.PNG">
+
+-------------------------------------------
+
+### Vamos a automatizar el proceso de creación de una nueva cuenta para la pagina con la que hemos venido trabajando
+
+Revisar archivo register_new_user.py
+
+
+
 
 
 

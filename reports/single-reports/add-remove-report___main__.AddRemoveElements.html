@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-05-17 15:55:45</p>
+                <p class='attribute'><strong>Duration: </strong>33.23 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.AddRemoveElements</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_remove</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Add/Remove Elements"}
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C18893+48451]
+	(No symbol) [0x00BAB8A1]
+	(No symbol) [0x00AB5058]
+	(No symbol) [0x00AE0467]
+	(No symbol) [0x00AE069B]
+	(No symbol) [0x00B0DD92]
+	(No symbol) [0x00AFA304]
+	(No symbol) [0x00B0C482]
+	(No symbol) [0x00AFA0B6]
+	(No symbol) [0x00AD7E08]
+	(No symbol) [0x00AD8F2D]
+	GetHandleVerifier [0x00E78E3A+2540266]
+	GetHandleVerifier [0x00EB8959+2801161]
+	GetHandleVerifier [0x00EB295C+2776588]
+	GetHandleVerifier [0x00CA2280+612144]
+	(No symbol) [0x00BB4F6C]
+	(No symbol) [0x00BB11D8]
+	(No symbol) [0x00BB12BB]
+	(No symbol) [0x00BA4857]
+	BaseThreadInitThunk [0x764B0099+25]
+	RtlGetAppContainerNamedObjectPath [0x77407B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77407B3E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\mgobea\Documents\develop\Python\selenium_python\add_remove_element.py", line 15, in setUp
+    driver.find_element(By.LINK_TEXT, 'Add/Remove Elements').click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgobea\Documents\develop\Python\selenium_python\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgobea\Documents\develop\Python\selenium_python\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mgobea\Documents\develop\Python\selenium_python\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Add/Remove Elements"}
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C18893+48451]
+	(No symbol) [0x00BAB8A1]
+	(No symbol) [0x00AB5058]
+	(No symbol) [0x00AE0467]
+	(No symbol) [0x00AE069B]
+	(No symbol) [0x00B0DD92]
+	(No symbol) [0x00AFA304]
+	(No symbol) [0x00B0C482]
+	(No symbol) [0x00AFA0B6]
+	(No symbol) [0x00AD7E08]
+	(No symbol) [0x00AD8F2D]
+	GetHandleVerifier [0x00E78E3A+2540266]
+	GetHandleVerifier [0x00EB8959+2801161]
+	GetHandleVerifier [0x00EB295C+2776588]
+	GetHandleVerifier [0x00CA2280+612144]
+	(No symbol) [0x00BB4F6C]
+	(No symbol) [0x00BB11D8]
+	(No symbol) [0x00BB12BB]
+	(No symbol) [0x00BA4857]
+	BaseThreadInitThunk [0x764B0099+25]
+	RtlGetAppContainerNamedObjectPath [0x77407B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77407B3E+238]
+
+C:\Users\mgobea\Documents\develop\Python\selenium_python\add_remove_element.py:10: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path="./chromedriver.exe")
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 33.23 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

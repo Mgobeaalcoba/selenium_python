@@ -201,6 +201,16 @@ Algunas de las condiciones esperadas con las que cuenta selenium y podemos usar 
 <img src="./images/condiciones_esperadas2.PNG">
 
 
+-----------------------------
+
+### Retos:
+
+Reto 1: Agregar y eleminar elementos usando selenium.
+
+La pagina donde trabajaremos todos estos retos es: http://the-internet.herokuapp.com/
+
+Lo resolveré en add_remove_element.py
+
 
 
 

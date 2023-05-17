@@ -211,6 +211,9 @@ La pagina donde trabajaremos todos estos retos es: http://the-internet.herokuapp
 
 Lo resolveré en add_remove_element.py
 
+Reto 2: Manejar elementos dinamicos de una web. Dolor de selenium
+
+Lo resolveré en dynamic_elements.py
 
 
 

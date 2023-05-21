@@ -280,4 +280,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Constantes
+CONSTANTES.py
+.CONSTANTES.py
+keys
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,visualstudiocode,venv,python

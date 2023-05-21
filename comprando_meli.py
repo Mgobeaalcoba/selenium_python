@@ -2,7 +2,7 @@ import unittest
 from HtmlTestRunner import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-from CONSTANTES import Buyer, Seller
+from keys.CONSTANTES import Buyer, Seller
 from time import sleep
 
 class HomePageTests(unittest.TestCase):

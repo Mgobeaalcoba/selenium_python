@@ -231,6 +231,22 @@ Consiste en desarrollar pruebas en base a código ya existente para validar en q
 
 <img src="./images/ejemplo_ddt.PNG">
 
+---------------------------------------------
+
+### Page Object Model:
+
+Consiste en hacer una prueba por cada pagina en lugar de varias paginas probadas en un unico test. 
+
+Es un patron de diseño muy utilizado para Testing. 
+
+Revisar la carpeta "pom" con sus dos files google_page.py y test_google.py
+
+<img src="./images/page_object.PNG">
+
+<img src="./images/page_object_2.PNG">
+
+
+
 
 
 

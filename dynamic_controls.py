@@ -22,7 +22,29 @@ class AddRemoveElements(unittest.TestCase):
         sleep(3)
 
     def test_name_elements(self):
-        pass
+        driver = self.driver
+
+        checkbox = driver.find_element(By.CSS_SELECTOR, '#checkbox > input[type=checkbox]')
+        checkbox.click()
+
+        remove_add_button = driver.find_element(By.CSS_SELECTOR, '#checkbox-example > button')
+        remove_add_button.click()
+
+        # Desaparece el checkbox, y el boton queda inutilizable, por lo que debemos esperar que esté disponible nuevamente antes de volver a usarlo: 
+
+        WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#checkbox-example > button')))
+        remove_add_button.click()
+
+        enable_disable_button = driver.find_element(By.CSS_SELECTOR, '#input-example > button')
+        enable_disable_button.click()
+
+        # Se habilita el input pero debemos esperar a que el botón sea clickeable para poder escribir en el mismo:
+
+        WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#input-example > button')))
+        input_text = driver.find_element(By.CSS_SELECTOR, '#input-example > input[type=text]').click()
+        input_text.send_keys('Mariano Gobea')
+        sleep(3)
+        enable_disable_button.click()
 
     def tearDown(self) -> None:
         driver = self.driver
@@ -34,7 +56,7 @@ class AddRemoveElements(unittest.TestCase):
 
         # Abrir el archivo HTML generado como reporte al finalizar el script:
         webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
-        webbrowser.get('chrome').open('file://' + os.path.realpath('reports/single-reports/dynamic-element-report.html'))
+        webbrowser.get('chrome').open('file://' + os.path.realpath('reports/single-reports/dynamic-controls-report.html'))
 
 if __name__ == '__main__':
     unittest.main(verbosity= 2, testRunner= HTMLTestRunner(output= './single-reports', report_name='dynamic-controls-report'))

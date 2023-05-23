@@ -215,6 +215,24 @@ Reto 2: Manejar elementos dinamicos de una web. Dolor de selenium
 
 Lo resolveré en dynamic_elements.py
 
+Reto 3: Manejar controladores dinamicos, es decir elementos cuya función puede variar a traves del tiempo. 
+
+Lo resolveré en dynamic_controls.py
+
+Hay dos retos mas resueltos en tables.py y typos.py
+
+---------------------------------------
+
+### Data Driven Testing: 
+
+Consiste en desarrollar pruebas en base a código ya existente para validar en que escenarios pasan o fallan. 
+
+<img src="./images/TDD_o_DDT.PNG">
+
+<img src="./images/ejemplo_ddt.PNG">
+
+
+
 
 
 

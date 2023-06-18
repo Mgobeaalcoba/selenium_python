@@ -55,7 +55,7 @@ Finalmente debemos buscar los drivers del navegador con el queramos trabajar. En
 
 **Unittest (PyTest):**
 
-<img src="./images/unittest.PNG">
+<img src="../images/unittest.PNG">
 
 ---------------------------------------
 
@@ -66,7 +66,7 @@ Finalmente debemos buscar los drivers del navegador con el queramos trabajar. En
 
 Ejemplo de test result corrido así: 
 
-<img src="./images/test_result.PNG">
+<img src="../images/test_result.PNG">
 
 -----------------------------------------
 
@@ -74,11 +74,11 @@ Ejemplo de test result corrido así:
 
 Recordemos la estructura de un sitio web. Es HTML:
 
-<img src="./images/estructura.PNG">
+<img src="../images/estructura.PNG">
 
 ¿Como vamos a llegar a estos elementos? A traves de los selectores que son estos:
 
-<img src="./images/selectores.PNG">
+<img src="../images/selectores.PNG">
 
 Entonces por ejemplo abro esta pagina creada con fines educativos:
 
@@ -97,20 +97,20 @@ Vamos a testearlo a traves un file/class de python llamado HomePageTest.py...
 
 Y el resultado de mi test es que encontró el elemento que buscamos: 
 
-<img src="./images/test_result_2.PNG">
+<img src="../images/test_result_2.PNG">
 
 
 ---------------------------------------------
 
 **Assertions**
 
-<img src="./images/assertions.PNG">
+<img src="../images/assertions.PNG">
 
 En el ejemplo afirmo que el atributo text del objeto price debe ser "Equal" a un string que contenga "300". 
 
 **Test Suites**
 
-<img src="./images/test_suites.PNG">
+<img src="../images/test_suites.PNG">
 
 Una vez que tenemos armados los archivos con las pruebas que queremos hacer, debemos construir nuestra Suite de Test en la cual le indicaremos que test queremos hacer y en que orden. Lo llamaremos "smoketests.py"
 
@@ -153,7 +153,7 @@ Propiedades de la clase WebDriver
 
 Estas son las más comunes para acceder al navegador:
 
-<img src="./images/clase_web_driver.PNG">
+<img src="../images/clase_web_driver.PNG">
 
 **Clase WebElement**
 
@@ -161,11 +161,11 @@ Esta clase nos permite interactuar específicamente con elementos de los sitios 
 
 Propiedades más comunes de la clase WebElement:
 
-<img src="./images/propiedades_web_element.PNG">
+<img src="../images/propiedades_web_element.PNG">
 
 Métodos más comunes de la clase WebElement
 
-<img src="./images/metodos_web_element.PNG">
+<img src="../images/metodos_web_element.PNG">
 
 -------------------------------------------
 
@@ -191,14 +191,14 @@ Podemos ver como revisando el archivo automatic_navigation.py
 
 Cuando ejecutamos de forma automatica acciones sobre un dominio podemos usar dos tipos distintos de demoras, en función de nuestra necesidad. Demoras implicitas yd demoras explicitas. 
 
-<img src="./images/demoras.PNG">
+<img src="../images/demoras.PNG">
 
 Podemos profundizar viendo el archivo waits.py
 
 Algunas de las condiciones esperadas con las que cuenta selenium y podemos usar son:
 
-<img src="./images/condiciones_esperadas.PNG">
-<img src="./images/condiciones_esperadas2.PNG">
+<img src="../images/condiciones_esperadas.PNG">
+<img src="../images/condiciones_esperadas2.PNG">
 
 
 -----------------------------
@@ -227,9 +227,9 @@ Hay dos retos mas resueltos en tables.py y typos.py
 
 Consiste en desarrollar pruebas en base a código ya existente para validar en que escenarios pasan o fallan. 
 
-<img src="./images/TDD_o_DDT.PNG">
+<img src="../images/TDD_o_DDT.PNG">
 
-<img src="./images/ejemplo_ddt.PNG">
+<img src="../images/ejemplo_ddt.PNG">
 
 ---------------------------------------------
 
@@ -241,9 +241,9 @@ Es un patron de diseño muy utilizado para Testing.
 
 Revisar la carpeta "pom" con sus dos files google_page.py y test_google.py
 
-<img src="./images/page_object.PNG">
+<img src="../images/page_object.PNG">
 
-<img src="./images/page_object_2.PNG">
+<img src="../images/page_object_2.PNG">
 
 
 
